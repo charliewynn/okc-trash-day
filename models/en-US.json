@@ -1,8 +1,8 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "high low game",
-        "intents": [
+      "invocationName": "oklahoma city trash day",
+      "intents": [
         {
           "name": "AMAZON.CancelIntent",
           "samples": []
@@ -13,7 +13,7 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": ["goodbye", "bye"]
         },
         {
           "name": "AMAZON.YesIntent",
@@ -28,16 +28,62 @@
           "samples": []
         },
         {
-          "name": "NumberGuessIntent",
-          "samples": [
-            "{number}",
-            "is it {number}",
-            "how about {number}",
-            "could be {number}"
+          "name": "GiveAddressIntent",
+          "slots": [
+            {
+              "name": "address",
+              "type": "AMAZON.PostalAddress"
+            }
           ],
-          "slots": [{
-              "name": "number", "type": "AMAZON.NUMBER"
-              }]
+          "samples": [
+            "{address}",
+            "my address is {address}",
+            "I live at {address}"
+          ]
+        },
+        {
+          "name": "ChangeAddressIntent",
+          "slots": [],
+          "samples": ["update address", "change my address"]
+        },
+        {
+          "name": "GetTrashDay",
+          "slots": [],
+          "samples": ["open oklahoma city trash day", "what's my trash day"]
+        },
+        {
+          "name": "GiveTrashDayIntent",
+          "slots": [
+            {
+              "name": "trashType",
+              "type": "trashType"
+            }
+          ],
+          "samples": ["when is my next {trashType} day"]
+        }
+      ],
+      "types": [
+        {
+          "name": "trashType",
+          "values": [
+            {
+              "name": {
+                "value": "big trash",
+                "synonyms": ["bulky"]
+              }
+            },
+            {
+              "name": {
+                "value": "recycling"
+              }
+            },
+            {
+              "name": {
+                "value": "trash",
+                "synonyms": ["regular trash"]
+              }
+            }
+          ]
         }
       ]
     }

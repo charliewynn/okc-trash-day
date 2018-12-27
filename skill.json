@@ -3,28 +3,18 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Guess a number, and Alexa will tell you if you need to guess higher or lower.",
+          "summary": "Have Alexa tell you when your next trash day (for Oklahoma City only)",
           "examplePhrases": [
-            "Alexa open high low game",
-            "Alexa start high low game",
-            "Alexa ask high low game is it {number}"
+            "Alexa open Oklahoma City trash day",
+            "Alexa start Oklahoma City trash day",
+            "Alexa ask Oklahoma City trash day when is my next recycling day"
           ],
-          "name": "High Low Game",
-          "description": "Guess a number, and Alexa will tell you if you need to guess higher or lower. She will also tell you how many times you have played. "
-        },
-        "en-GB": {
-          "summary": "Guess a number, and Alexa will tell you if you need to guess higher or lower.",
-          "examplePhrases": [
-            "Alexa open high low game",
-            "Alexa start high low game",
-            "Alexa ask high low game is it {number}"
-          ],
-          "name": "High Low Game",
-          "description": "Guess a number, and Alexa will tell you if you need to guess higher or lower. She will also tell you how many times you have played. "
+          "name": "Oklahoma City Trash Day",
+          "description": "Tell Alexa your Oklahoma City Address. She can then tell you your next trash, recycling, and big-trash day."
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Sample Testing Instructions.",
+      "testingInstructions": "Use the address 3705 Windscape Ave for a valid address",
       "category": "EDUCATION_AND_REFERENCE",
       "distributionCountries": []
     },

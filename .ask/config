@@ -1,18 +1,39 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
-      "was_cloned": true,
+      "skill_id": "amzn1.ask.skill.84795cb0-0096-44e9-9a0c-364c74959a20",
+      "was_cloned": false,
       "merge": {
         "manifest": {
           "apis": {
             "custom": {
               "endpoint": {
-                "uri": "ask-custom-highlow-default"
+                "uri": "ask-okc-trash-day"
               }
             }
           }
         }
+      },
+      "resources": {
+        "manifest": {
+          "eTag": "51e55b45e2ea91d53ef6d7bf89d452a4"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "35b9993f9f9ce51c3d1bc334db6bdea5"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:573976258474:function:ask-okc-trash-day",
+            "functionName": "arn:aws:lambda:us-east-1:573976258474:function:ask-okc-trash-day",
+            "awsRegion": "us-east-1",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "e59163c5-823c-4ce0-99fc-ef6bfa46f0f5"
+          }
+        ]
       }
     }
   }
